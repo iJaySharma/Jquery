@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<meta charset ='utf-8'>
+<title>Jquery Example</title>
+<script src='jquery\jquery.js'></script>
+<style>
+.something
+{
+font-size: 14pt;
+color: red;
+}
+</style>
+<script>
+var d2state=1;
+$(()=>{
+$("#button1").click(function(){
+alert($("#d1.something").css("font-size"));
+alert($("#d1.something").css("color"));
+alert($("#d1.something").css("font-family"));
+$("#d1.something").css("font-family","verdana");
+});
+$("#button2").click(function(){
+if(d2state)
+{
+$("#d2").hide('slow');
+}
+else
+{
+$("#d2").show('fast');
+}
+});
+});
+</script>
+</head>
+<body>
+<div id='d1' class='something'>
+this cool section<br>
+do whatever is required
+</div>
+<div id="d2">
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+god is great ,ujjain is the city of gods<br>
+</div>
+<button type='button' id='button1'>(1)click me</button>
+<button type='button' id='button2'>(2)click me</button>
+</body>
+</html>
